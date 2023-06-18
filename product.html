@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Smartphone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="product.js"></script>
+</head>
+<body  onload="successHandler()">
+<form id="createProduct">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                <label>
+                    <input type="text" placeholder="name" id="name">
+                </label>
+            </td>
+        </tr>
+         <tr>
+            <td>Description</td>
+            <td>
+                <label>
+                    <input type="text" placeholder="description" id="description">
+                </label>
+            </td>
+        </tr>
+         <tr>
+            <td>Price</td>
+            <td>
+                <label>
+                    <input type="number" placeholder="price" id="price">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" onclick="addNewSmartPhone()" value="SaveProduct">
+            </td>
+        </tr>
+    </table>
+</form>
+<h1>List Product</h1>
+<table id="listProduct" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+
+</table>
+</body>
+</html>
